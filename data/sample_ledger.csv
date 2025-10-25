@@ -1,0 +1,107 @@
+date,voucher_id,account,debit,credit,amount,vendor,poster,description
+2024-10-01 09:15:00,V1001,1000-CASH,5000.00,0.00,5000.00,ABC Corp,john.doe,Office supplies purchase
+2024-10-01 09:15:00,V1001,5000-EXPENSE,0.00,5000.00,-5000.00,ABC Corp,john.doe,Office supplies expense
+2024-10-01 14:30:00,V1002,1000-CASH,2500.00,0.00,2500.00,XYZ Ltd,jane.smith,Consulting services
+2024-10-01 14:30:00,V1002,4000-REVENUE,0.00,2500.00,-2500.00,XYZ Ltd,jane.smith,Consulting revenue
+2024-10-02 10:00:00,V1003,1000-CASH,1200.00,0.00,1200.00,Tech Vendor,john.doe,Software license
+2024-10-02 10:00:00,V1003,5100-IT-EXP,0.00,1200.00,-1200.00,Tech Vendor,john.doe,Software license expense
+2024-10-02 16:45:00,V1004,1000-CASH,3500.00,0.00,3500.00,Office Depot,jane.smith,Furniture purchase
+2024-10-02 16:45:00,V1004,5000-EXPENSE,0.00,3500.00,-3500.00,Office Depot,jane.smith,Furniture expense
+2024-10-03 08:30:00,V1005,1000-CASH,800.00,0.00,800.00,Cafe Co,bob.jones,Client lunch
+2024-10-03 08:30:00,V1005,5200-MEALS,0.00,800.00,-800.00,Cafe Co,bob.jones,Meals expense
+2024-10-03 11:20:00,V1006,1000-CASH,15000.00,0.00,15000.00,Big Client,john.doe,Project payment
+2024-10-03 11:20:00,V1006,4000-REVENUE,0.00,15000.00,-15000.00,Big Client,john.doe,Project revenue
+2024-10-04 09:00:00,V1007,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Monthly utilities
+2024-10-04 09:00:00,V1007,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-10-04 13:15:00,V1008,1000-CASH,4200.00,0.00,4200.00,ABC Corp,john.doe,Supplies
+2024-10-04 13:15:00,V1008,5000-EXPENSE,0.00,4200.00,-4200.00,ABC Corp,john.doe,Supplies expense
+2024-10-05 10:30:00,V1009,1000-CASH,2200.00,0.00,2200.00,Consultant A,bob.jones,Advisory services
+2024-10-05 10:30:00,V1009,5400-CONSULTING,0.00,2200.00,-2200.00,Consultant A,bob.jones,Consulting expense
+2024-10-05 15:00:00,V1010,1000-CASH,1800.00,0.00,1800.00,XYZ Ltd,jane.smith,Maintenance
+2024-10-05 15:00:00,V1010,5500-MAINTENANCE,0.00,1800.00,-1800.00,XYZ Ltd,jane.smith,Maintenance expense
+2024-10-07 02:30:00,V1011,1000-CASH,10000.00,0.00,10000.00,Rare Vendor,unknown.user,Late night transfer
+2024-10-07 02:30:00,V1011,5000-EXPENSE,0.00,10000.00,-10000.00,Rare Vendor,unknown.user,Suspicious expense
+2024-10-08 09:15:00,V1012,1000-CASH,3100.00,0.00,3100.00,Tech Vendor,john.doe,Hardware
+2024-10-08 09:15:00,V1012,5100-IT-EXP,0.00,3100.00,-3100.00,Tech Vendor,john.doe,Hardware expense
+2024-10-08 14:20:00,V1013,1000-CASH,1500.00,0.00,1500.00,Office Depot,jane.smith,Office supplies
+2024-10-08 14:20:00,V1013,5000-EXPENSE,0.00,1500.00,-1500.00,Office Depot,jane.smith,Office expense
+2024-10-09 11:00:00,V1014,1000-CASH,2800.00,0.00,2800.00,ABC Corp,john.doe,Materials
+2024-10-09 11:00:00,V1014,5000-EXPENSE,0.00,2800.00,-2800.00,ABC Corp,john.doe,Materials expense
+2024-10-09 16:30:00,V1015,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Utilities
+2024-10-09 16:30:00,V1015,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-10-10 08:45:00,V1016,1000-CASH,5500.00,0.00,5500.00,Big Client,john.doe,Invoice payment
+2024-10-10 08:45:00,V1016,4000-REVENUE,0.00,5500.00,-5500.00,Big Client,john.doe,Revenue
+2024-10-10 10:00:00,V1017,1000-CASH,1200.00,0.00,1200.00,Cafe Co,bob.jones,Team lunch
+2024-10-10 10:00:00,V1017,5200-MEALS,0.00,1200.00,-1200.00,Cafe Co,bob.jones,Meals expense
+2024-10-11 09:30:00,V1018,1000-CASH,3300.00,0.00,3300.00,XYZ Ltd,jane.smith,Service
+2024-10-11 09:30:00,V1018,5500-MAINTENANCE,0.00,3300.00,-3300.00,XYZ Ltd,jane.smith,Service expense
+2024-10-11 15:45:00,V1019,1000-CASH,2500.00,0.00,2500.00,Consultant A,bob.jones,Consulting
+2024-10-11 15:45:00,V1019,5400-CONSULTING,0.00,2500.00,-2500.00,Consultant A,bob.jones,Consulting expense
+2024-10-11 15:45:00,V1020,1000-CASH,2500.00,0.00,2500.00,Consultant A,bob.jones,Consulting
+2024-10-11 15:45:00,V1020,5400-CONSULTING,0.00,2500.00,-2500.00,Consultant A,bob.jones,Duplicate entry same day
+2024-10-14 23:15:00,V1021,1000-CASH,5000.00,0.00,5000.00,Weekend Corp,night.shift,Weekend transaction
+2024-10-14 23:15:00,V1021,5000-EXPENSE,0.00,5000.00,-5000.00,Weekend Corp,night.shift,Weekend expense
+2024-10-15 09:00:00,V1022,1000-CASH,4100.00,0.00,4100.00,ABC Corp,john.doe,Regular purchase
+2024-10-15 09:00:00,V1022,5000-EXPENSE,0.00,4100.00,-4100.00,ABC Corp,john.doe,Regular expense
+2024-10-15 13:20:00,V1023,1000-CASH,1800.00,0.00,1800.00,Tech Vendor,john.doe,Tech supplies
+2024-10-15 13:20:00,V1023,5100-IT-EXP,0.00,1800.00,-1800.00,Tech Vendor,john.doe,Tech expense
+2024-10-16 10:15:00,V1024,1000-CASH,2700.00,0.00,2700.00,Office Depot,jane.smith,Supplies
+2024-10-16 10:15:00,V1024,5000-EXPENSE,0.00,2700.00,-2700.00,Office Depot,jane.smith,Supplies expense
+2024-10-16 14:30:00,V1025,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Utilities
+2024-10-16 14:30:00,V1025,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-10-17 08:00:00,V1026,1000-CASH,6200.00,0.00,6200.00,Big Client,john.doe,Payment received
+2024-10-17 08:00:00,V1026,4000-REVENUE,0.00,6200.00,-6200.00,Big Client,john.doe,Revenue
+2024-10-17 11:45:00,V1027,1000-CASH,1100.00,0.00,1100.00,Cafe Co,bob.jones,Lunch
+2024-10-17 11:45:00,V1027,5200-MEALS,0.00,1100.00,-1100.00,Cafe Co,bob.jones,Meals expense
+2024-10-18 09:30:00,V1028,1000-CASH,25000.00,0.00,25000.00,Unknown LLC,mystery.user,Large round amount
+2024-10-18 14:30:00,V1029,1000-CASH,3800.00,0.00,3800.00,XYZ Ltd,jane.smith,Service
+2024-10-18 14:30:00,V1029,5500-MAINTENANCE,0.00,3800.00,-3800.00,XYZ Ltd,jane.smith,Maintenance
+2024-10-19 10:00:00,V1030,1000-CASH,2900.00,0.00,2900.00,Consultant A,bob.jones,Advisory
+2024-10-19 10:00:00,V1030,5400-CONSULTING,0.00,2900.00,-2900.00,Consultant A,bob.jones,Consulting expense
+2024-10-19 15:15:00,V1031,1000-CASH,4500.00,0.00,4500.00,ABC Corp,john.doe,Purchase
+2024-10-19 15:15:00,V1031,5000-EXPENSE,0.00,4500.00,-4500.00,ABC Corp,john.doe,Expense
+2024-10-22 09:45:00,V1032,1000-CASH,3200.00,0.00,3200.00,Tech Vendor,john.doe,Software
+2024-10-22 09:45:00,V1032,5100-IT-EXP,0.00,3200.00,-3200.00,Tech Vendor,john.doe,IT expense
+2024-10-22 13:00:00,V1033,1000-CASH,1900.00,0.00,1900.00,Office Depot,jane.smith,Supplies
+2024-10-22 13:00:00,V1033,5000-EXPENSE,0.00,1900.00,-1900.00,Office Depot,jane.smith,Supplies expense
+2024-10-23 10:30:00,V1034,1000-CASH,2600.00,0.00,2600.00,XYZ Ltd,jane.smith,Service
+2024-10-23 10:30:00,V1034,5500-MAINTENANCE,0.00,2600.00,-2600.00,XYZ Ltd,jane.smith,Service expense
+2024-10-23 14:45:00,V1035,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Utilities
+2024-10-23 14:45:00,V1035,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-10-24 08:15:00,V1036,1000-CASH,7800.00,0.00,7800.00,Big Client,john.doe,Project payment
+2024-10-24 08:15:00,V1036,4000-REVENUE,0.00,7800.00,-7800.00,Big Client,john.doe,Revenue
+2024-10-24 12:00:00,V1037,1000-CASH,1350.00,0.00,1350.00,Cafe Co,bob.jones,Client meeting
+2024-10-24 12:00:00,V1037,5200-MEALS,0.00,1350.00,-1350.00,Cafe Co,bob.jones,Meals expense
+2024-10-25 09:00:00,V1038,1000-CASH,3700.00,0.00,3700.00,ABC Corp,john.doe,Materials
+2024-10-25 09:00:00,V1038,5000-EXPENSE,0.00,3700.00,-3700.00,ABC Corp,john.doe,Materials expense
+2024-10-25 15:30:00,V1039,1000-CASH,2400.00,0.00,2400.00,Consultant A,bob.jones,Consulting
+2024-10-25 15:30:00,V1039,5400-CONSULTING,0.00,2400.00,-2400.00,Consultant A,bob.jones,Consulting expense
+2024-10-28 10:15:00,V1040,1000-CASH,2100.00,0.00,2100.00,Tech Vendor,john.doe,Hardware
+2024-10-28 10:15:00,V1040,5100-IT-EXP,0.00,2100.00,-2100.00,Tech Vendor,john.doe,IT expense
+2024-10-28 14:00:00,V1041,1000-CASH,3300.00,0.00,3300.00,Office Depot,jane.smith,Furniture
+2024-10-28 14:00:00,V1041,5000-EXPENSE,0.00,3300.00,-3300.00,Office Depot,jane.smith,Furniture expense
+2024-10-29 09:30:00,V1042,1000-CASH,2800.00,0.00,2800.00,XYZ Ltd,jane.smith,Maintenance
+2024-10-29 09:30:00,V1042,5500-MAINTENANCE,0.00,2800.00,-2800.00,XYZ Ltd,jane.smith,Maintenance expense
+2024-10-29 13:45:00,V1043,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Utilities
+2024-10-29 13:45:00,V1043,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-10-30 08:00:00,V1044,1000-CASH,5400.00,0.00,5400.00,Big Client,john.doe,Invoice
+2024-10-30 08:00:00,V1044,4000-REVENUE,0.00,5400.00,-5400.00,Big Client,john.doe,Revenue
+2024-10-30 11:30:00,V1045,1000-CASH,1250.00,0.00,1250.00,Cafe Co,bob.jones,Team lunch
+2024-10-30 11:30:00,V1045,5200-MEALS,0.00,1250.00,-1250.00,Cafe Co,bob.jones,Meals expense
+2024-10-31 09:00:00,V1046,1000-CASH,4300.00,0.00,4300.00,ABC Corp,john.doe,Month-end purchase
+2024-10-31 09:00:00,V1046,5000-EXPENSE,0.00,4300.00,-4300.00,ABC Corp,john.doe,Month-end expense
+2024-10-31 15:00:00,V1047,1000-CASH,3100.00,0.00,3100.00,Consultant A,bob.jones,Final consulting
+2024-10-31 15:00:00,V1047,5400-CONSULTING,0.00,3100.00,-3100.00,Consultant A,bob.jones,Consulting expense
+2024-11-01 10:00:00,V1048,1000-CASH,2900.00,0.00,2900.00,Tech Vendor,john.doe,New month supplies
+2024-11-01 10:00:00,V1048,5100-IT-EXP,0.00,2900.00,-2900.00,Tech Vendor,john.doe,IT expense
+2024-11-01 14:30:00,V1049,1000-CASH,2200.00,0.00,2200.00,Office Depot,jane.smith,Supplies
+2024-11-01 14:30:00,V1049,5000-EXPENSE,0.00,2200.00,-2200.00,Office Depot,jane.smith,Supplies expense
+2024-11-04 09:15:00,V1050,1000-CASH,3500.00,0.00,3500.00,XYZ Ltd,jane.smith,Service
+2024-11-04 09:15:00,V1050,5500-MAINTENANCE,0.00,3500.00,-3500.00,XYZ Ltd,jane.smith,Service expense
+2024-11-04 13:00:00,V1051,1000-CASH,950.00,0.00,950.00,Utility Corp,jane.smith,Utilities
+2024-11-04 13:00:00,V1051,5300-UTILITIES,0.00,950.00,-950.00,Utility Corp,jane.smith,Utilities expense
+2024-11-05 08:30:00,V1052,1000-CASH,6700.00,0.00,6700.00,Big Client,john.doe,Payment
+2024-11-05 08:30:00,V1052,4000-REVENUE,0.00,6700.00,-6700.00,Big Client,john.doe,Revenue
+2024-11-05 12:15:00,V1053,1000-CASH,1400.00,0.00,1400.00,Cafe Co,bob.jones,Lunch meeting
+2024-11-05 12:15:00,V1053,5200-MEALS,0.00,1400.00,-1400.00,Cafe Co,bob.jones,Meals expense
+
