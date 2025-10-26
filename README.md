@@ -6,6 +6,8 @@ A production-quality application for detecting and explaining anomalies in accou
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-1.31+-red.svg)
 
+![Application Screenshot](Screenshot.png)
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -67,39 +69,39 @@ This application combines multiple anomaly detection techniques to identify susp
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     Streamlit Frontend                       │
-│  Upload → Detect → Batch Explain → Individual Explain → Results  │
-└─────────────────────────┬───────────────────────────────────┘
-                          │
-┌─────────────────────────┴───────────────────────────────────┐
-│                     Core Pipeline                            │
-├─────────────────────────────────────────────────────────────┤
-│  1. Feature Engineering (features.py)                        │
-│     ├─ Temporal: weekday, hour, month-end                   │
-│     ├─ Statistical: amount_z, amount_log                    │
-│     ├─ Behavioral: vendor_freq, poster_freq                 │
-│     └─ Patterns: duplicates, balanced_voucher               │
-│                                                              │
-│  2. Rule-Based Detection (rules.py)                         │
-│     ├─ Unbalanced vouchers                                  │
-│     ├─ Duplicate transactions                                │
-│     ├─ Timing violations                                     │
-│     └─ Unusual account pairs                                 │
-│                                                              │
-│  3. ML Detection (detectors.py)                             │
-│     ├─ IsolationForest → anomaly scores                     │
-│     ├─ XGBoost → typicality scores                          │
-│     └─ Ensemble → weighted combination                       │
-│                                                              │
-│  4. Explainability (shap_utils.py, llm_explainer.py)       │
-│     ├─ SHAP → feature contributions                          │
-│     ├─ Groq API → natural language                           │
-│     └─ Pydantic → structured validation                      │
-│                                                              │
-│  5. Persistence (persistence.py)                            │
-│     └─ User feedback → CSV logging                           │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                     Streamlit Frontend                            │
+│  Upload → Detect → Batch Explain → Individual Explain → Results   │
+└────────────────────────────────┬────────────────────────────────────┘
+                                │
+┌────────────────────────────────┴────────────────────────────────────┐
+│                     Core Pipeline                                 │
+├─────────────────────────────────────────────────────────────────────┤
+│  1. Feature Engineering (features.py)                             │
+│     ├─ Temporal: weekday, hour, month-end                         │
+│     ├─ Statistical: amount_z, amount_log                          │
+│     ├─ Behavioral: vendor_freq, poster_freq                       │
+│     └─ Patterns: duplicates, balanced_voucher                     │
+│                                                                   │
+│  2. Rule-Based Detection (rules.py)                               │
+│     ├─ Unbalanced vouchers                                        │
+│     ├─ Duplicate transactions                                     │
+│     ├─ Timing violations                                          │
+│     └─ Unusual account pairs                                      │
+│                                                                   │
+│  3. ML Detection (detectors.py)                                   │
+│     ├─ IsolationForest → anomaly scores                           │
+│     ├─ XGBoost → typicality scores                                │
+│     └─ Ensemble → weighted combination                            │
+│                                                                   │
+│  4. Explainability (shap_utils.py, llm_explainer.py)              │
+│     ├─ SHAP → feature contributions                               │
+│     ├─ Groq API → natural language                                │
+│     └─ Pydantic → structured validation                           │
+│                                                                   │
+│  5. Persistence (persistence.py)                                  │
+│     └─ User feedback → CSV logging                                │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 ## Installation
